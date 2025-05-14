@@ -1,6 +1,7 @@
 <!-- 🔹 HEADING + SUBHEADING -->
 <h3 style="text-align: center;"><a href="{{%20product.url%20}}">Sandália Masculina Birken Preta com Palmilha Anatômica e Estilo Atemporal</a></h3>
 <p style="text-align: center;">A Sandália Masculina Birken Preta da Vestyge traduz o equilíbrio entre conforto e sofisticação. Com estética minimalista e acabamento fosco, é a escolha ideal para quem busca elegância funcional no cotidiano.</p>
+
 <!-- 🔹 LINHA DO TEMPO -->
 <style>
     .timeline-container {
@@ -113,6 +114,7 @@ Produção</div>
     });
   </script>
 </div>
+
 <!-- 🔹 ÍCONES COM TEXTO (Visual Estilo Antigo Shopify - Circulares) -->
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
@@ -178,6 +180,7 @@ Produção</div>
 <p>Materiais resistentes, acabamento elegante e desempenho prolongado.</p>
 </div>
 </div>
+
 <!-- 🔹 BEFORE/AFTER SLIDER INTERATIVO -->
 <style>
   .ba-container {
@@ -253,9 +256,11 @@ Produção</div>
 <div class="ba-slider" id="ba-slider-1"></div>
 </div>
 <p> </p>
+
 <!-- 🔹 GUIA VISUAL (FLIPBOOK) -->
 <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; margin-bottom: 40px;"><iframe src="https://publuu.com/flip-book/873845/1914569" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" loading="lazy">
   </iframe></div>
+
 <!-- 🔹 ESPECIFICAÇÕES TÉCNICAS -->
 <h3 style="text-align: center;">ESPECIFICAÇÕES TÉCNICAS</h3>
 <ul style="text-align: left; padding-left: 20px;">
