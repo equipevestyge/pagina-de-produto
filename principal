@@ -1,0 +1,271 @@
+<!-- 🔹 HEADING + SUBHEADING -->
+<h3 style="text-align: center;"><a href="{{%20product.url%20}}">Sandália Masculina Birken Preta com Palmilha Anatômica e Estilo Atemporal</a></h3>
+<p style="text-align: center;">A Sandália Masculina Birken Preta da Vestyge traduz o equilíbrio entre conforto e sofisticação. Com estética minimalista e acabamento fosco, é a escolha ideal para quem busca elegância funcional no cotidiano.</p>
+<!-- 🔹 LINHA DO TEMPO -->
+<style>
+    .timeline-container {
+      padding: 40px 16px;
+      box-sizing: border-box;
+    }
+    .timeline-nav {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 24px;
+    }
+    .timeline-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .timeline-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #ccc;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 4px;
+      transition: all 0.3s ease;
+    }
+    .timeline-dot.active {
+      background: #000;
+      color: #fff;
+    }
+    .timeline-nav-item.active {
+      color: #000;
+    }
+    .timeline-slide {
+      display: none;
+      text-align: center;
+    }
+    .timeline-slide.active {
+      display: block;
+    }
+    .timeline-slide img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+    .timeline-slide h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .timeline-slide p {
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+<div class="timeline-container">
+<div class="timeline-nav">
+<div class="timeline-nav-item active" data-index="0">
+<div class="timeline-dot active">1</div>
+Pesquisa</div>
+<div class="timeline-nav-item" data-index="1">
+<div class="timeline-dot">2</div>
+Design</div>
+<div class="timeline-nav-item" data-index="2">
+<div class="timeline-dot">3</div>
+Produção</div>
+</div>
+<div class="timeline-slide active" data-index="0">
+<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/erasebg-transformed_2.webp?v=1747113557" alt="Pesquisa">
+<h3>Pesquisa</h3>
+<p>Investigamos tendências e materiais premium que refletissem o estilo Old Money.</p>
+</div>
+<div class="timeline-slide" data-index="1">
+<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/alcas_f54446dd-d127-426f-a755-fb8946676b80.webp?v=1747113552" alt="Design">
+<h3>Design</h3>
+<p>Desenhamos uma silhueta clássica com curvas elegantes e proporções atemporais.</p>
+</div>
+<div class="timeline-slide" data-index="2">
+<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/fivelas_6057de0a-6c8a-4976-ba46-e87cc4ba39b4.webp?v=1747113544" alt="Produção">
+<h3>Produção</h3>
+<p>Produzido com materiais duráveis, garantindo conforto e elegância no dia a dia.</p>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navItems = document.querySelectorAll('.timeline-nav-item');
+      const dots = document.querySelectorAll('.timeline-dot');
+      const slides = document.querySelectorAll('.timeline-slide');
+
+      navItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const index = item.getAttribute('data-index');
+
+          navItems.forEach(nav => nav.classList.remove('active'));
+          dots.forEach(dot => dot.classList.remove('active'));
+          slides.forEach(s => s.classList.remove('active'));
+
+          item.classList.add('active');
+          item.querySelector('.timeline-dot').classList.add('active');
+          document.querySelector(`.timeline-slide[data-index='${index}']`).classList.add('active');
+        });
+      });
+    });
+  </script>
+</div>
+<!-- 🔹 ÍCONES COM TEXTO (Visual Estilo Antigo Shopify - Circulares) -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 48px 16px;
+  }
+
+  .feature-item {
+    flex: 1 1 240px;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #144447;
+    margin-bottom: 16px;
+  }
+
+  .feature-icon .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-size: 36px;
+    color: white;
+    font-variation-settings: 'wght' 200;
+  }
+
+  .feature-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+  }
+</style>
+<div class="feature-grid">
+<div class="feature-item">
+<div class="feature-icon"><span class="material-symbols-outlined">checkroom</span></div>
+<h3>Design Atemporal</h3>
+<p>Versatilidade para qualquer ocasião com traços clássicos e estética refinada.</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon"><span class="material-symbols-outlined">event_seat</span></div>
+<h3>Conforto Premium</h3>
+<p>Palmilha anatômica moldada para absorver impacto e garantir bem-estar.</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon"><span class="material-symbols-outlined">construction</span></div>
+<h3>Durabilidade</h3>
+<p>Materiais resistentes, acabamento elegante e desempenho prolongado.</p>
+</div>
+</div>
+<!-- 🔹 BEFORE/AFTER SLIDER INTERATIVO -->
+<style>
+  .ba-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 40px 0;
+    touch-action: none;
+  }
+  .ba-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+  }
+  .ba-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 0 0 50%);
+  }
+  .ba-slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-color: #144447;
+    z-index: 2;
+    cursor: ew-resize;
+  }
+  .ba-slider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.15);
+  }
+  .ba-slider::after {
+    content: '|||';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #000;
+    z-index: 5;
+  }
+  .ba-label {
+    position: absolute;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 10px;
+    font-size: 13px;
+    border-radius: 4px;
+    z-index: 3;
+  }
+  .ba-label.left { left: 10px; }
+  .ba-label.right { right: 10px; }
+</style>
+<div class="ba-container" id="ba-container-1">
+<span class="ba-label left">Antes</span> <span class="ba-label right">Depois</span> <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/Imagem-cjhinelo.png?v=1747125935" alt="Antes"> <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/imagem-sand_lia.png?v=1747125908" class="ba-after" id="ba-after-1" alt="Depois">
+<div class="ba-slider" id="ba-slider-1"></div>
+</div>
+<p> </p>
+<!-- 🔹 GUIA VISUAL (FLIPBOOK) -->
+<div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; margin-bottom: 40px;"><iframe src="https://publuu.com/flip-book/873845/1914569" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" loading="lazy">
+  </iframe></div>
+<!-- 🔹 ESPECIFICAÇÕES TÉCNICAS -->
+<h3 style="text-align: center;">ESPECIFICAÇÕES TÉCNICAS</h3>
+<ul style="text-align: left; padding-left: 20px;">
+<li>Tipo: Sandália Masculina Estilo Birken</li>
+<li>Cor: Preto fosco</li>
+<li>Material Externo: Couro sintético premium</li>
+<li>Palmilha: Anatômica com absorção de impacto</li>
+<li>Solado: Borracha com frisos antiderrapantes</li>
+<li>Fechamento: Duas fivelas metálicas ajustáveis</li>
+<li>Estilo: Atemporal / Minimalista / Casual</li>
+<li>Indicação: Masculino (uso unissex com estética refinada)</li>
+<li>Numeração: 37 ao 44 (forma padrão brasileira)</li>
+</ul>
