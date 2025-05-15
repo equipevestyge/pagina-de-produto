@@ -38,7 +38,7 @@
       transition: all 0.3s ease;
     }
     .timeline-dot.active {
-      background: #000;
+      background: #144447;
       color: #fff;
     }
     .timeline-nav-item.active {
@@ -69,28 +69,28 @@
 <div class="timeline-nav">
 <div class="timeline-nav-item active" data-index="0">
 <div class="timeline-dot active">1</div>
-Pesquisa</div>
+Solado</div>
 <div class="timeline-nav-item" data-index="1">
 <div class="timeline-dot">2</div>
-Design</div>
+Alças</div>
 <div class="timeline-nav-item" data-index="2">
 <div class="timeline-dot">3</div>
-Produção</div>
+Fivela</div>
 </div>
 <div class="timeline-slide active" data-index="0">
-<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/erasebg-transformed_2.webp?v=1747113557" alt="Pesquisa">
-<h3>Pesquisa</h3>
-<p>Investigamos tendências e materiais premium que refletissem o estilo Old Money.</p>
+<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/erasebg-transformed_2.webp?v=1747113557" alt="Solado">
+<h3>Solado</h3>
+<p>Feitos de cortiça natural e sustentável. Ao caminhar, sentirá a mesma flexibilidade e conforto singular, que abraça seus pés a cada passo.</p>
 </div>
 <div class="timeline-slide" data-index="1">
-<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/alcas_f54446dd-d127-426f-a755-fb8946676b80.webp?v=1747113552" alt="Design">
-<h3>Design</h3>
-<p>Desenhamos uma silhueta clássica com curvas elegantes e proporções atemporais.</p>
+<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/erasebg-transformed_1.webp?v=1747344900" alt="Alças">
+<h3>Alças</h3>
+<p>Feitas de camurça, um nobre couro com toque de veludo. Envolve o pé em conforto, sem abrir mão do estilo. O material natural permite que a pele respire livremente, sem aquecer. Flexibilidade única com suavidade e firmeza.</p>
 </div>
 <div class="timeline-slide" data-index="2">
-<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/fivelas_6057de0a-6c8a-4976-ba46-e87cc4ba39b4.webp?v=1747113544" alt="Produção">
-<h3>Produção</h3>
-<p>Produzido com materiais duráveis, garantindo conforto e elegância no dia a dia.</p>
+<img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/erasebg-transformed.webp?v=1747344898" alt="Fivela">
+<h3>Fivela</h3>
+<p>Os fechos de metal são leves, resistentes e proporcionam ajuste firme e seguro.</p>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -181,35 +181,8 @@ Produção</div>
 </div>
 </div>
 
-<!-- 🔹 BLOCO 1 — DESIGN + VISUAL COM IMAGEM À DIREITA -->
+<!-- ✅ BLOCO VISUAL COM LAYOUT LADO A LADO NO DESKTOP E SWIPER NO MOBILE -->
 
-<section style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin: 48px 0;">
-  <div style="flex: 1; min-width: 280px;">
-    <h2 style="font-size: 22px; margin-bottom: 8px;">Estética Old Money Repaginada</h2>
-    <p style="font-size: 15px; color: #444;">
-      Inspirada no visual europeu, esta sandália apresenta tiras largas com fivelas metálicas ajustáveis em acabamento fosco. Seu design atemporal une elegância sutil e versatilidade, perfeito para compor looks sóbrios e sofisticados.
-    </p>
-  </div>
-  <div style="flex: 1; min-width: 280px;">
-    <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" alt="Design sofisticado" style="width: 100%; border-radius: 12px;" />
-  </div>
-</section>
-
-<!-- 🔹 BLOCO 2 — DESIGN + VISUAL COM IMAGEM À ESQUERDA -->
-
-<section style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; flex-direction: row-reverse; margin: 48px 0;">
-  <div style="flex: 1; min-width: 280px;">
-    <h2 style="font-size: 22px; margin-bottom: 8px;">Conforto que Acompanha Seu Ritmo</h2>
-    <p style="font-size: 15px; color: #444;">
-      A palmilha anatômica molda-se ao pé, absorvendo o impacto e mantendo o conforto durante todo o dia. O solado antiderrapante oferece estabilidade mesmo em superfícies irregulares — ideal para dias intensos sem abrir mão do estilo.
-    </p>
-  </div>
-  <div style="flex: 1; min-width: 280px;">
-    <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" style="width: 100%; border-radius: 12px;" />
-  </div>
-</section>
-
-<!-- ESTILO GERAL -->
 <style>
   .benefit-slide {
     display: flex;
@@ -221,10 +194,17 @@ Produção</div>
   }
 
   .benefit-slide img {
-    max-width: 480px;
-    width: 100%;
-    border-radius: 12px;
-  }
+  max-width: 480px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0px; /* novo */
+}
+
+.benefit-text h2 {
+  margin-top: 0; /* evita espaçamento extra no título */
+  margin-bottom: 0px;
+}
+
 
   .benefit-text {
     max-width: 460px;
@@ -241,14 +221,13 @@ Produção</div>
     line-height: 1.6;
   }
 
-  /* Mobile: ativa swiper */
   @media (max-width: 767px) {
     .swiper-slide {
-      display: flex;
+      display: flex !important;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 24px;
+      padding: 8px 16px 16px 16px;
     }
 
     .benefit-slide {
@@ -257,22 +236,145 @@ Produção</div>
     }
 
     .benefit-text {
-      padding-top: 16px;
+      padding-top: 8px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .benefit-swiper {
+      display: none;
+    }
+
+    .mobile-only {
+      display: none !important;
+    }
+
+    .desktop-only {
+      display: block !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .mobile-only {
+      display: block !important;
+    }
+
+    .desktop-only {
+      display: none !important;
     }
   }
 </style>
 
-<!-- BLOCO SWIPER COM 2 SLIDES DE EXEMPLO -->
-<div class="swiper benefit-swiper">
+<!-- ✅ DESKTOP: VISUAL LADO A LADO -->
+<section class="desktop-only">
+  <!-- BLOCO 1 -->
+  <div class="benefit-slide">
+    <div style="flex: 1; min-width: 280px;">
+      <h2>Estética Old Money Repaginada</h2>
+      <p>
+        Inspirada no visual europeu, esta sandália apresenta tiras largas com fivelas metálicas ajustáveis em acabamento fosco. Seu design atemporal une elegância sutil e versatilidade, perfeito para compor looks sóbrios e sofisticados.
+      </p>
+    </div>
+    <div style="flex: 1; min-width: 280px;">
+      <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" alt="Design sofisticado" />
+    </div>
+  </div>
+
+  <!-- BLOCO 2 -->
+  <div class="benefit-slide" style="flex-direction: row-reverse;">
+    <div style="flex: 1; min-width: 280px;">
+      <h2>Conforto que Acompanha Seu Ritmo</h2>
+      <p>
+        A palmilha anatômica molda-se ao pé, absorvendo o impacto e mantendo o conforto durante todo o dia. O solado antiderrapante oferece estabilidade mesmo em superfícies irregulares — ideal para dias intensos sem abrir mão do estilo.
+      </p>
+    </div>
+    <div style="flex: 1; min-width: 280px;">
+      <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" alt="Palmilha anatômica" />
+    </div>
+  </div>
+</section>
+
+<!-- ✅ MOBILE: SLIDER SWIPER -->
+<style>
+  .swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8px 16px;
+    position: relative;
+  }
+
+  .benefit-slide {
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .benefit-slide img {
+    max-width: 480px;
+    width: 100%;
+    border-radius: 12px;
+    max-height: 320px;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  .benefit-text {
+    padding-top: 4px;
+  }
+
+  .benefit-text h2 {
+    font-size: 20px;
+    margin: 8px 0 4px;
+  }
+
+  .benefit-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    padding: 0 8px;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #144447;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 32px;
+    height: 32px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .swiper-button-prev { left: 10px; }
+  .swiper-button-next { right: 10px; }
+</style>
+
+<div class="swiper benefit-swiper mobile-only">
   <div class="swiper-wrapper">
 
     <!-- SLIDE 1 -->
     <div class="swiper-slide">
       <div class="benefit-slide">
-        <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/estetica-europeia.webp" alt="Estética refinada">
+        <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" alt="Design sofisticado">
         <div class="benefit-text">
           <h2>Estética Old Money Repaginada</h2>
-          <p>Inspirada no design europeu, essa sandália possui tiras largas, fivelas metálicas foscas e proporções clássicas. Uma proposta discreta, sofisticada e ideal para visuais urbanos com elegância atemporal.</p>
+          <p>Inspirada no visual europeu, esta sandália apresenta tiras largas com fivelas metálicas ajustáveis em acabamento fosco. Seu design atemporal une elegância sutil e versatilidade, perfeito para compor looks sóbrios e sofisticados.</p>
         </div>
       </div>
     </div>
@@ -280,37 +382,49 @@ Produção</div>
     <!-- SLIDE 2 -->
     <div class="swiper-slide">
       <div class="benefit-slide">
-        <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/palmilha-sandalia.webp" alt="Palmilha anatômica">
+        <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" alt="Palmilha anatômica">
         <div class="benefit-text">
           <h2>Conforto que Acompanha Seu Ritmo</h2>
-          <p>A palmilha anatômica molda-se ao pé, absorve impactos e mantém o conforto durante todo o dia. O solado antiderrapante garante estabilidade e segurança em qualquer superfície.</p>
+          <p>A palmilha anatômica molda-se ao pé, absorvendo o impacto e mantendo o conforto durante todo o dia. O solado antiderrapante oferece estabilidade mesmo em superfícies irregulares — ideal para dias intensos sem abrir mão do estilo.</p>
         </div>
       </div>
     </div>
 
   </div>
 
-  <!-- Botões de navegação (visíveis apenas no mobile por padrão) -->
+  <!-- Paginação e Navegação -->
   <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev">&#10094;</div>
+  <div class="swiper-button-next">&#10095;</div>
 </div>
 
-<!-- SCRIPT DE INICIALIZAÇÃO -->
 <script>
-  const swiper = new Swiper('.benefit-swiper', {
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+  if (!isMobile) {
+    document.querySelector('.desktop-only').style.display = 'block';
+  }
+
+  new Swiper('.benefit-swiper', {
     slidesPerView: 1,
     spaceBetween: 16,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
       768: {
-        // Desativa swiper no desktop (volta ao layout nativo)
         enabled: false
       }
     }
   });
 </script>
+
+
+
 
 
 <!-- 🔹 BEFORE/AFTER SLIDER INTERATIVO - RESPONSIVO -->
