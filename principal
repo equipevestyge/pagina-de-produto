@@ -1,6 +1,6 @@
 <!-- 🔹 HEADING + SUBHEADING -->
-<h3 style="text-align: center;"><a href="{{%20product.url%20}}">Sandália Masculina Birken Preta com Palmilha Anatômica e Estilo Atemporal</a></h3>
-<p style="text-align: center;">A Sandália Masculina Birken Preta da Vestyge traduz o equilíbrio entre conforto e sofisticação. Com estética minimalista e acabamento fosco, é a escolha ideal para quem busca elegância funcional no cotidiano.</p>
+<h2 style="text-align: center;"><a href="{{%20product.url%20}}">Sandália Masculina Birken Preta com Palmilha Anatômica e Estilo Atemporal</a></h3>
+<p style="font-size: 15px; color: #444;"text-align: center;">A Sandália Masculina Birken Preta da Vestyge traduz o equilíbrio entre conforto e sofisticação. Com estética minimalista e acabamento fosco, é a escolha ideal para quem busca elegância funcional no cotidiano.</p>
 
 <!-- 🔹 LINHA DO TEMPO -->
 <style>
@@ -181,53 +181,192 @@ Produção</div>
 </div>
 </div>
 
-<!-- 🔹 BEFORE/AFTER SLIDER INTERATIVO -->
+<!-- 🔹 BLOCO 1 — DESIGN + VISUAL COM IMAGEM À DIREITA -->
+
+<section style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin: 48px 0;">
+  <div style="flex: 1; min-width: 280px;">
+    <h2 style="font-size: 22px; margin-bottom: 8px;">Estética Old Money Repaginada</h2>
+    <p style="font-size: 15px; color: #444;">
+      Inspirada no visual europeu, esta sandália apresenta tiras largas com fivelas metálicas ajustáveis em acabamento fosco. Seu design atemporal une elegância sutil e versatilidade, perfeito para compor looks sóbrios e sofisticados.
+    </p>
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" alt="Design sofisticado" style="width: 100%; border-radius: 12px;" />
+  </div>
+</section>
+
+<!-- 🔹 BLOCO 2 — DESIGN + VISUAL COM IMAGEM À ESQUERDA -->
+
+<section style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; flex-direction: row-reverse; margin: 48px 0;">
+  <div style="flex: 1; min-width: 280px;">
+    <h2 style="font-size: 22px; margin-bottom: 8px;">Conforto que Acompanha Seu Ritmo</h2>
+    <p style="font-size: 15px; color: #444;">
+      A palmilha anatômica molda-se ao pé, absorvendo o impacto e mantendo o conforto durante todo o dia. O solado antiderrapante oferece estabilidade mesmo em superfícies irregulares — ideal para dias intensos sem abrir mão do estilo.
+    </p>
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/modelo-vestindo-old-money-sandalia-preta-birken.png?v=1744808770" style="width: 100%; border-radius: 12px;" />
+  </div>
+</section>
+
+<!-- ESTILO GERAL -->
 <style>
-  .ba-container {
-    position: relative;
+  .benefit-slide {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 48px 0;
+  }
+
+  .benefit-slide img {
+    max-width: 480px;
     width: 100%;
+    border-radius: 12px;
+  }
+
+  .benefit-text {
+    max-width: 460px;
+  }
+
+  .benefit-text h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .benefit-text p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  /* Mobile: ativa swiper */
+  @media (max-width: 767px) {
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .benefit-slide {
+      flex-direction: column;
+      padding: 24px 0;
+    }
+
+    .benefit-text {
+      padding-top: 16px;
+    }
+  }
+</style>
+
+<!-- BLOCO SWIPER COM 2 SLIDES DE EXEMPLO -->
+<div class="swiper benefit-swiper">
+  <div class="swiper-wrapper">
+
+    <!-- SLIDE 1 -->
+    <div class="swiper-slide">
+      <div class="benefit-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/estetica-europeia.webp" alt="Estética refinada">
+        <div class="benefit-text">
+          <h2>Estética Old Money Repaginada</h2>
+          <p>Inspirada no design europeu, essa sandália possui tiras largas, fivelas metálicas foscas e proporções clássicas. Uma proposta discreta, sofisticada e ideal para visuais urbanos com elegância atemporal.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="swiper-slide">
+      <div class="benefit-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/palmilha-sandalia.webp" alt="Palmilha anatômica">
+        <div class="benefit-text">
+          <h2>Conforto que Acompanha Seu Ritmo</h2>
+          <p>A palmilha anatômica molda-se ao pé, absorve impactos e mantém o conforto durante todo o dia. O solado antiderrapante garante estabilidade e segurança em qualquer superfície.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botões de navegação (visíveis apenas no mobile por padrão) -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- SCRIPT DE INICIALIZAÇÃO -->
+<script>
+  const swiper = new Swiper('.benefit-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        // Desativa swiper no desktop (volta ao layout nativo)
+        enabled: false
+      }
+    }
+  });
+</script>
+
+
+<!-- 🔹 BEFORE/AFTER SLIDER INTERATIVO - RESPONSIVO -->
+<style>
+  .ba-wrapper {
+    position: relative;
+    max-width: 560px;
+    margin: 40px auto;
     overflow: hidden;
     border-radius: 12px;
-    margin: 40px 0;
-    touch-action: none;
+    aspect-ratio: 3 / 4;
+    background: #f2f2f2;
   }
-  .ba-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    user-select: none;
-    pointer-events: none;
-  }
-  .ba-after {
+
+  .ba-wrapper img {
     position: absolute;
     top: 0;
     left: 0;
-    clip-path: inset(0 0 0 50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
   }
+
+  .ba-after {
+    clip-path: inset(0 0 0 50%);
+    z-index: 1;
+  }
+
   .ba-slider {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 3px;
-    height: 100%;
     background-color: #144447;
-    z-index: 2;
+    z-index: 3;
     cursor: ew-resize;
   }
+
   .ba-slider::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.15);
+    z-index: 3;
   }
+
   .ba-slider::after {
     content: '|||';
     position: absolute;
@@ -236,8 +375,9 @@ Produção</div>
     transform: translate(-50%, -50%);
     font-size: 18px;
     color: #000;
-    z-index: 5;
+    z-index: 4;
   }
+
   .ba-label {
     position: absolute;
     top: 10px;
@@ -246,20 +386,77 @@ Produção</div>
     padding: 4px 10px;
     font-size: 13px;
     border-radius: 4px;
-    z-index: 3;
+    z-index: 5;
   }
+
   .ba-label.left { left: 10px; }
   .ba-label.right { right: 10px; }
-</style>
-<div class="ba-container" id="ba-container-1">
-<span class="ba-label left">Antes</span> <span class="ba-label right">Depois</span> <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/Imagem-cjhinelo.png?v=1747125935" alt="Antes"> <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/imagem-sand_lia.png?v=1747125908" class="ba-after" id="ba-after-1" alt="Depois">
-<div class="ba-slider" id="ba-slider-1"></div>
-</div>
-<p> </p>
 
-<!-- 🔹 GUIA VISUAL (FLIPBOOK) -->
-<div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; margin-bottom: 40px;"><iframe src="https://publuu.com/flip-book/873845/1914569" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" loading="lazy">
-  </iframe></div>
+  @media (max-width: 767px) {
+    .ba-wrapper {
+      aspect-ratio: 3 / 5;
+      max-width: 100%;
+      margin: 24px auto;
+    }
+
+    .ba-slider::before {
+      width: 36px;
+      height: 36px;
+    }
+
+    .ba-slider::after {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<div class="ba-wrapper" id="ba-wrapper-1">
+  <span class="ba-label left">Antes</span>
+  <span class="ba-label right">Depois</span>
+  <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/Imagem-cjhinelo.png?v=1747125935" alt="Antes">
+  <img src="https://cdn.shopify.com/s/files/1/0630/4838/4718/files/imagem-sand_lia.png?v=1747125908" class="ba-after" id="ba-after-1" alt="Depois">
+  <div class="ba-slider" id="ba-slider-1"></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById('ba-wrapper-1');
+    const baAfter = document.getElementById('ba-after-1');
+    const baSlider = document.getElementById('ba-slider-1');
+
+    const updateSlider = (x) => {
+      const rect = wrapper.getBoundingClientRect();
+      let offsetX = x - rect.left;
+      offsetX = Math.max(0, Math.min(offsetX, rect.width));
+      const percent = (offsetX / rect.width) * 100;
+      baAfter.style.clipPath = `inset(0 0 0 ${percent}%)`;
+      baSlider.style.left = `${percent}%`;
+    };
+
+    let dragging = false;
+
+    const startDrag = (e) => {
+      dragging = true;
+      e.preventDefault();
+    };
+
+    const moveDrag = (e) => {
+      if (!dragging) return;
+      const x = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+      updateSlider(x);
+    };
+
+    const stopDrag = () => dragging = false;
+
+    baSlider.addEventListener('mousedown', startDrag);
+    window.addEventListener('mousemove', moveDrag);
+    window.addEventListener('mouseup', stopDrag);
+
+    baSlider.addEventListener('touchstart', startDrag, { passive: true });
+    window.addEventListener('touchmove', moveDrag, { passive: true });
+    window.addEventListener('touchend', stopDrag);
+  });
+</script>
 
 <!-- 🔹 ESPECIFICAÇÕES TÉCNICAS -->
 <h3 style="text-align: center;">ESPECIFICAÇÕES TÉCNICAS</h3>
